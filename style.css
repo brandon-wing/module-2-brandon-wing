@@ -46,8 +46,9 @@ nav a{
     border: 1px solid lime;
 }
 
-nav a:hover{
-    color:yellow;
+a:hover{
+    color:black;
+    background-color: lime;
 }
 
 .subhead{
@@ -100,47 +101,51 @@ nav a:hover{
 }
 
 .containerthree{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: darkgrey;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.projectsidebar{
-    font-size: 200%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width:300px;
-    min-height:1000px;
-    height: 80%;
-    border-right: 5px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+background-color: darkgray;
+padding: 20px;
 }
 
 .projectone{
-    display: flex;
-    align-items: center;
+    display:flex;
+    width:80%;
     justify-content: center;
-    width:300px;
-    height: 100%;
-    padding: 20px;
-    padding-right: 100px;
+    align-items: flex-end;
+    min-height: 400px;
+    border: 10px solid black;
+    background-image: url(/);
 }
-
+.projectone h1{
+    border: 5px solid black;
+    border-bottom: 0px;
+}
 .projects{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width:300px;
-    height: 100%;
-    padding: 20px;
-    padding-right: 100px;
+margin: 20px;
+width: 300px;
+height: 300px;
+border: 10px solid black;
+justify-content: flex-start;
+align-items: center;
+}
+.projects h1{
+    border: 5px solid black;
+    border-left: 0px;
 }
 
 
+.projectone a{
+    text-decoration: none;
+    color: black;
+}
 
+.projects a{
+    text-decoration: none;
+    color: black;
+}
 
 footer ul{
     margin-left: 20px;
@@ -160,5 +165,12 @@ footer a{
 }
 
 footer a:hover{
-    color:yellow;
+    color:black;
+    background-color: lime;
+}
+.foot{
+    display: flex;
+    height: 25px;
+    width: 100%;
+    background-image:url(images/matrix.jpeg);
 }
